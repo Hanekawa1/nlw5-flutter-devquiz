@@ -9,32 +9,36 @@ class QuizWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        child: Column(
-      children: [
-        Text(
-          title,
-          style: AppTextStyles.heading,
-        ),
-        SizedBox(height: 24),
-        AnswerWidget(
-            isSelected: true,
-            title:
-                "Possibilita a criação de aplicativos compilados nativamente."),
-        AnswerWidget(
-            isSelected: true,
-            isRight: true,
-            title:
-                "Possibilita a criação de aplicativos compilados nativamente."),
-        AnswerWidget(
-            title:
-                "Possibilita a criação de aplicativos compilados nativamente."),
-        AnswerWidget(
-            title:
-                "Possibilita a criação de aplicativos compilados nativamente."),
-        AnswerWidget(
-            title:
-                "Possibilita a criação de aplicativos compilados nativamente.")
-      ],
-    ));
+      child: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 20, right: 20, top: 30),
+            child: Text(
+              title,
+              style: AppTextStyles.heading,
+            ),
+          ),
+          SizedBox(height: 24),
+          AnswerWidget(
+              isSelected: true,
+              title:
+                  "Possibilita a criação de aplicativos compilados nativamente."),
+          AnswerWidget(
+              isSelected: true,
+              isRight: true,
+              title:
+                  "Possibilita a criação de aplicativos compilados nativamente."),
+          AnswerWidget(
+              title:
+                  "Possibilita a criação de aplicativos compilados nativamente."),
+          AnswerWidget(
+              title:
+                  "Possibilita a criação de aplicativos compilados nativamente."),
+          AnswerWidget(
+              title:
+                  "Possibilita a criação de aplicativos compilados nativamente.")
+        ],
+      ),
+    );
   }
 }

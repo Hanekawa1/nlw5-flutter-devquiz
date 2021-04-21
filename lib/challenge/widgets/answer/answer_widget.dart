@@ -38,11 +38,14 @@ class AnswerWidget extends StatelessWidget {
       child: Container(
         padding: EdgeInsets.all(16),
         decoration: BoxDecoration(
-            color: isSelected ? _selectedColorCardRight : AppColors.white,
-            borderRadius: BorderRadius.circular(10),
-            border: Border.fromBorderSide(BorderSide(
+          color: isSelected ? _selectedColorCardRight : AppColors.white,
+          borderRadius: BorderRadius.circular(10),
+          border: Border.fromBorderSide(
+            BorderSide(
                 color:
-                    isSelected ? _selectedBorderCardRight : AppColors.border))),
+                    isSelected ? _selectedBorderCardRight : AppColors.border),
+          ),
+        ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -57,16 +60,18 @@ class AnswerWidget extends StatelessWidget {
               width: 24,
               height: 24,
               decoration: BoxDecoration(
-                  color: isSelected ? _selectedColorRight : AppColors.white,
-                  borderRadius: BorderRadius.circular(500),
-                  border: Border.fromBorderSide(BorderSide(
-                      color: isSelected
-                          ? _selectedBorderRight
-                          : AppColors.border))),
+                color: isSelected ? _selectedColorRight : AppColors.white,
+                borderRadius: BorderRadius.circular(500),
+                border: Border.fromBorderSide(
+                  BorderSide(
+                      color:
+                          isSelected ? _selectedBorderRight : AppColors.border),
+                ),
+              ),
               child: isSelected
                   ? Icon(_selectedIconRight, size: 16, color: Colors.white)
                   : null,
-            )
+            ),
           ],
         ),
       ),
