@@ -11,13 +11,13 @@
           {"title": "Estou curtindo!"},
           {"title": "Adorando!"},
           {"title": "Muito top!"},
-          {"title": "Show de bola!"}
+          {"title": "Show de bola!", "isRight": true}
         ]
       },
       {
         "title": "Pretende continuar a usar o Flutter?",
         "answers": [
-          {"title": "Sim!"},
+          {"title": "Sim!", "isRight": true},
           {"title": "Talvez"},
           {"title": "Com certeza"},
           {"title": "Provavelmente"}
